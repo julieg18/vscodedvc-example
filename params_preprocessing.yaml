@@ -1,0 +1,28 @@
+example:
+
+  steps:
+    impute_missing:
+      transformer: SimpleImputer
+      params:
+        strategy: constant
+        fill_value: missing_value
+
+    onehot_encoder:
+      transformer: OneHotEncoder
+      params:
+        handle_unknown: infrequent_if_exist
+        min_frequency: 0.01
+      hyperparam_space:
+        min_frequency:
+          name: UniformDistribution
+          attributes:
+            low: 2
+            high: 10
+
+  features_in:
+    [
+      "Location",
+      "WindGustDir",
+      "WindDir9am",
+      "WindDir3pm",
+    ]

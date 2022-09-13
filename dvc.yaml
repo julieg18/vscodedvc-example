@@ -1,0 +1,10 @@
+vars:
+  - params_preprocessing.yaml
+
+stages:
+  testing:
+    cmd: echo "foo" > bar.txt
+    outs:
+      - bar.txt
+    params:
+      - params_preprocessing.yaml:
