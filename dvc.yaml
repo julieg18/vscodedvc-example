@@ -3,8 +3,6 @@ vars:
 
 stages:
   testing:
-    cmd: echo "foo" > bar.txt
-    outs:
-      - bar.txt
+    cmd: echo "foo"
     params:
       - params_preprocessing.yaml:

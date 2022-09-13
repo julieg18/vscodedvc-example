@@ -1,7 +1,7 @@
 schema: '2.0'
 stages:
   testing:
-    cmd: echo "foo" > bar.txt
+    cmd: echo "foo"
     params:
       params_preprocessing.yaml:
         example:
@@ -27,7 +27,3 @@ stages:
           - WindGustDir
           - WindDir9am
           - WindDir3pm
-    outs:
-    - path: bar.txt
-      md5: d3b07384d113edec49eaa6238ad5ff00
-      size: 4

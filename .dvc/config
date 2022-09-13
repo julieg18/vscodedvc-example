@@ -1,4 +1,0 @@
-['remote "testremote"']
-url = testremote
-[core]
-remote = testremote
